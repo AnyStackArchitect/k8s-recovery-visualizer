@@ -1,16 +1,15 @@
-# k8s-recovery-visualizer
+# K8 Visualizer
+
+**Repository:** `k8s-recovery-visualizer`
 
 [![CI](https://github.com/eblackrps/k8s-recovery-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/eblackrps/k8s-recovery-visualizer/actions/workflows/ci.yml)
 [![Latest Release](https://img.shields.io/github/v/release/eblackrps/k8s-recovery-visualizer)](https://github.com/eblackrps/k8s-recovery-visualizer/releases)
 [![License](https://img.shields.io/github/license/eblackrps/k8s-recovery-visualizer)](LICENSE)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/eblackrps/k8s-recovery-visualizer)](go.mod)
 
-`k8s-recovery-visualizer` is the repository, release, and archive identity for a Kubernetes disaster recovery assessment toolkit. The desktop product is `K8 Visualizer` (`K8V`): a Wails desktop workspace for remote cluster scans, live preflight and run feedback, bundle review, history, compare workflows, and offline exports. The current desktop release is intentionally calmer and denser than earlier dashboard-styled builds, with a quieter shell, a simpler scan-complete handoff, and kubeconfig inspection that now calls out loopback-only cluster endpoints such as `127.0.0.1` instead of leaving operators to guess. The Go CLI stays in-repo for contributors, CI gates, smoke tests, automation, and source builds.
+K8 Visualizer (`K8V`) is a desktop-first Kubernetes disaster recovery assessment toolkit for live cluster scans, restore-readiness analysis, offline bundle review, historical comparison, and report exports. The repository also includes a Go CLI for CI gates, automation, smoke tests, and source builds.
 
 Current stable desktop release: [`v1.10.5`](https://github.com/eblackrps/k8s-recovery-visualizer/releases/tag/v1.10.5). Download the latest packaged build from [GitHub Releases](https://github.com/eblackrps/k8s-recovery-visualizer/releases/latest) and see [CHANGELOG.md](CHANGELOG.md) for release-by-release notes.
-
-<!-- TODO: refresh screenshot for v1.10.5 -->
-- Home view placeholder: first-run onboarding, machine readiness, tighter enterprise surfaces, and the trimmed topbar now define the refreshed desktop entry point.
 
 <p align="center">
   <img alt="K8V findings workspace with prioritized recovery actions" src="images/gui-results-findings.png" width="49%" />
@@ -136,8 +135,7 @@ make build
 
 ## Latest Desktop Screenshots
 
-<!-- TODO: refresh screenshot for v1.10.5 -->
-- Home view placeholder: onboarding cards appear only on the first run, while returning operators see the tighter four-panel workspace without repeated explainer content.
+The maintained gallery below reflects the current `v1.10.5` desktop workflow: guided setup, live execution, completion handoff, findings review, and comparison.
 
 <p align="center">
   <img alt="K8V guided API endpoint scan setup" src="images/gui-scan-setup.png" width="32%" />
